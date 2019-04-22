@@ -80,15 +80,15 @@
             if(count($registrants) > 0) {
                 echo "<caption>People who are registered:</caption>";
                 echo "<table>";
-                echo "<tr><th>Name</th>";
+                echo "<thead> <tr><th>Name</th>";
                 echo "<tr><th>Email</th>";
                 echo "<tr><th>Jenis Kelamin</th>";
-                echo "<tr><th>Alamat</th>";
+                echo "<tr><th>Alamat</th></thead>";
                 foreach($registrants as $registrant) {
-                    echo "<tr><td>".$registrant['name']."</td>";
+                    echo "<tbody><tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
                     echo "<td>".$registrant['jk']."</td>";
-                    echo "<td>".$registrant['alamat']."</td></tr>";
+                    echo "<td>".$registrant['alamat']."</td></tr><tbody>";
                 }
                 echo "</table>";
             } else {
