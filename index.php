@@ -26,8 +26,8 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    // $host = "idappserver.database.windows.net";
-    $host = "tcp:idappserver.database.windows.net:1433";
+    $host = "idappserver.database.windows.net";
+    // $host = "tcp:idappserver.database.windows.net:1433";
     $user = "arman";
     $pass = "Sayangshiffa1";
     $db = "armanidapp";
