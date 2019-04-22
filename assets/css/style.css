@@ -1,0 +1,223 @@
+form {
+  margin:10% auto 0 auto;
+  padding:30px;
+  width:400px;
+  height:auto;
+  overflow:hidden;
+  background:white;
+  border-radius:10px;
+}
+
+form label {
+  font-size:14px;
+  color:darkgray;
+  cursor:pointer;
+}
+
+form label,
+form input {
+  float:left;
+  clear:both;
+}
+
+form input {
+  margin:15px 0;
+  padding:15px 10px;
+  width:100%;
+  outline:none;
+  border:1px solid #bbb;
+  border-radius:20px;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+form input[type=text]:focus,
+form input[type="password"]:focus {
+  border-color:cornflowerblue;
+}
+
+input[type=submit] {
+  padding:15px 50px;
+  width:auto;
+  background:#1abc9c;
+  border:none;
+  color:white;
+  cursor:pointer;
+  display:inline-block;
+  float:right;
+  clear:right;
+  -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+input[type=submit]:hover {
+  opacity:0.8;
+}
+
+input[type="submit"]:active {
+  opacity:0.4;
+}
+
+.forgot,
+.register {
+  margin:10px;
+  float:left;
+  clear:left;
+  display:inline-block;
+  color:cornflowerblue;
+  text-decoration:none;
+}
+
+.forgot:hover,
+.register:hover {
+  color:darkgray;
+}
+
+#logo {
+  margin:0 auto;
+  width:200px;
+  font-family:'Lily Script One', cursive;
+  font-size:60px;
+  font-weight:bold;
+  text-align:center;
+  color:lightgray;
+  -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+#logo:hover {
+  color:cornflowerblue;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.radio{
+  margin-top: 0px;
+  margin-left: 8px;
+}
+
+.mg-left-8{
+  margin-left: 8px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 500px;
+  height: 100px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
