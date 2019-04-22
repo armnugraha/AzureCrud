@@ -51,19 +51,21 @@
 
     if (isset($_POST['submit'])) {
         try {
+            $id = 1;
             $name = $_POST['name'];
             $email = $_POST['email'];
             $jk = $_POST['jk'];
             $alamat = $_POST['alamat'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO [dbo].[register] (null, name, email, jk, alamat) 
+            $sql_insert = "INSERT INTO [dbo].[register] (id, name, email, jk, alamat) 
                         VALUES (?,?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
-            $stmt->bindValue(1, $name);
-            $stmt->bindValue(2, $email);
-            $stmt->bindValue(3, $jk);
-            $stmt->bindValue(4, $alamat);
+            $stmt->bindValue(1, $id);
+            $stmt->bindValue(2, $name);
+            $stmt->bindValue(3, $email);
+            $stmt->bindValue(4, $jk);
+            $stmt->bindValue(5, $alamat);
             $stmt->execute();
         } catch(Exception $e) {
             echo "Failed: " . $e;
