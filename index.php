@@ -57,8 +57,8 @@
             $alamat = $_POST['alamat'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO [dbo].[register] (name, email, jk, alamat) 
-                        VALUES (?,?,?,?)";
+            $sql_insert = "INSERT INTO [dbo].[register] (null, name, email, jk, alamat) 
+                        VALUES (?,?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
             $stmt->bindValue(2, $email);
