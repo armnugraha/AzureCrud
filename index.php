@@ -81,9 +81,9 @@
                 echo "<caption>People who are registered:</caption>";
                 echo "<table>";
                 echo "<thead> <tr><th>Name</th>";
-                echo "<tr><th>Email</th>";
-                echo "<tr><th>Jenis Kelamin</th>";
-                echo "<tr><th>Alamat</th></thead>";
+                echo "<th>Email</th>";
+                echo "<th>Jenis Kelamin</th>";
+                echo "<th>Alamat</th></tr></thead>";
                 foreach($registrants as $registrant) {
                     echo "<tbody><tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
