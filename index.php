@@ -39,7 +39,7 @@
     $host = "idappserver.database.windows.net";
     // $host = "tcp:idappserver.database.windows.net:1433";
     $user = "arman";
-    $pass = "Sayangshiffa1";
+    $pass = "hehe";
     $db = "armanidapp";
 
     try {
